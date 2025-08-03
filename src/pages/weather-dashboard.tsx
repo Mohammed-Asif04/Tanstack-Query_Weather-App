@@ -4,6 +4,9 @@ import { useGeolocation } from "@/hooks/use-geolocation";
 import { Alert, AlertDescription, AlertTitle } from "../components/ui/alert";
 import { MapPin, AlertTriangle, RefreshCw } from "lucide-react";
 import { useForecastQuery, useReverseGeocodeQuery, useWeatherQuery } from "@/hooks/use-weather";
+import CurrentWeather from "@/components/current-weather";
+import  HourlyTemperature from "@/components/hourly-temprature";
+import WeatherDetails from "@/components/weather-details";
 
 const WeatherDashboard = () => {
 const {coordinates,error:locationError,getLocation,isLoading:locationLoading}= useGeolocation();
@@ -12,9 +15,9 @@ const weatherQuery = useWeatherQuery(coordinates);
 const forecastQuery = useForecastQuery(coordinates);
 const locationQuery = useReverseGeocodeQuery(coordinates);
 
-
+// Function to refresh all data
 const handleRefresh = () => {
-    getLocation()
+    getLocation();
     if (coordinates) {
         weatherQuery.refetch();
         forecastQuery.refetch();
@@ -25,7 +28,8 @@ const handleRefresh = () => {
     return <WeatherSkeleton />;
   }
   if (locationError) {
-    <Alert variant="destructive">
+    return (
+      <Alert variant="destructive">
         <AlertTriangle className="h-4 w-4" />
         <AlertTitle>Location Error</AlertTitle>
         <AlertDescription className="flex flex-col gap-4">
@@ -36,6 +40,7 @@ const handleRefresh = () => {
           </Button>
         </AlertDescription>
       </Alert>
+    );
   }
   if (!coordinates) {
     return (
@@ -89,7 +94,17 @@ const handleRefresh = () => {
                 <RefreshCw className={`h-4 w-4 ${weatherQuery.isFetching ? "animate-spin" : ""}`} />
             </Button>
         </div>
-        {/* Current and Hourly Weather */}
+        <div className="grid gap-6">
+          <div className="flex flex-col lg:flex-row gap-4">
+            <CurrentWeather data={weatherQuery.data} locationName={locationName} />
+            <HourlyTemperature data={forecastQuery.data} />
+          </div>
+          <div>
+            {/* details forecast */}
+            <WeatherDetails data ={weatherQuery.data}/>
+            {/* forecast */}
+          </div>
+        </div>
     </div>
   )
 }
