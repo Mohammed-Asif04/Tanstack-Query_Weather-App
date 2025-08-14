@@ -1,69 +1,79 @@
-# React + TypeScript + Vite
+# 🌦️ Weather App  
+**Built with React, TanStack Query, TypeScript, ShadCN UI & Recharts**  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern weather application that provides real-time forecasts with beautiful visualizations. This project showcases efficient data fetching with TanStack Query, type safety with TypeScript, and a polished UI using ShadCN components with Recharts for data visualization.
 
-Currently, two official plugins are available:
+🔗 **GitHub Repository**: [https://github.com/Mohammed-Asif04/Weather-App.git](https://github.com/Mohammed-Asif04/Weather-App.git)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<table>
+  <tr>
+    <td width="50%" valign="top">
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### **1. Weather Data & Performance**  
+🔹 **Real-time forecasts** - Current + 5-day predictions  
+🔹 **Location-based** - Automatic location detection  
+🔹 **Optimized caching** - TanStack Query for efficient data management  
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### **2. Beautiful Visualizations**  
+🔹 **Interactive charts** - Recharts for weather trends  
+🔹 **Responsive design** - Works on all devices  
+🔹 **Theme support** - Light/dark mode ready  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+  </td>
+  <td width="50%" valign="top">
+
+### **3. Developer Experience**  
+🔹 **Type-safe codebase** - Full TypeScript integration  
+🔹 **Modern components** - ShadCN UI library  
+🔹 **Code quality** - ESLint + Prettier pre-configured  
+
+### **4. Comprehensive Metrics**  
+🔹 **Detailed analytics** - Humidity, wind, UV index  
+🔹 **Historical data** - Track weather patterns  
+🔹 **Customizable** - Personalize your dashboard  
+
+  </td>
+  </tr>
+</table>
+
+---
+
+## 🚀 Quick Start  
+
+### **1. Clone the Repository**  
+```bash
+git clone https://github.com/Mohammed-Asif04/Weather-App.git
+cd Weather-App
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### **2. Install Dependencies**  
+```bash
+npm install
 ```
+
+### **3. Create a .env file**  
+```bash
+VITE_WEATHER_API_KEY=your_weatherapi_key_here
+```
+
+
+### **3. Run the Application**  
+```bash
+npm run dev
+```
+
+---
+## 📚 Official Documentation
+
+### **Core Technologies**
+| Technology | Version | Documentation |
+|------------|---------|---------------|
+| <img src="https://img.shields.io/badge/React-18+-61DAFB?logo=react" alt="React"> | ^18.2.0 | [react.dev](https://react.dev) |
+| <img src="https://img.shields.io/badge/TypeScript-5+-3178C6?logo=typescript" alt="TypeScript"> | ^5.0.0 | [typescriptlang.org](https://www.typescriptlang.org/docs/) |
+| <img src="https://img.shields.io/badge/TanStack_Query-4+-FF4154?logo=reactquery" alt="TanStack Query"> | ^4.36.0 | [tanstack.com/query](https://tanstack.com/query/latest) |
+| <img src="https://img.shields.io/badge/ShadCN_UI-0.4+-000?logo=shadcn" alt="ShadCN UI"> | ^0.4.0 | [ui.shadcn.com](https://ui.shadcn.com/docs) |
+| <img src="https://img.shields.io/badge/Recharts-2+-64B5F6?logo=recharts" alt="Recharts"> | ^2.8.0 | [recharts.org](https://recharts.org/) |
