@@ -86,10 +86,12 @@ npm run dev
 <table>
   <tr>
     <td>
-      <img width="1900" height="1683" alt="Weather-Dashboard" src="https://github.com/user-attachments/assets/7e01aa7c-bb0b-4667-8af5-32ab5c663436" />
-      <img width="1900" height="1893" alt="Cityp-Page" src="https://github.com/user-attachments/assets/25092906-e804-4a11-a732-7587166b8fe4" />
+    <img width="1900" height="1683" alt="Weather-Dashboard" src="https://github.com/user-attachments/assets/67ee5d9f-4c9f-4d12-bc21-f6180d7d84d9" />
+    <img width="1900" height="1893" alt="Cityp-Page" src="https://github.com/user-attachments/assets/25092906-e804-4a11-a732-7587166b8fe4" />
     </td>
   </tr>
 </table>
+
+
 
 
