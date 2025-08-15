@@ -77,3 +77,21 @@ npm run dev
 | <img src="https://img.shields.io/badge/TanStack_Query-4+-FF4154?logo=reactquery" alt="TanStack Query"> | ^4.36.0 | [tanstack.com/query](https://tanstack.com/query/latest) |
 | <img src="https://img.shields.io/badge/ShadCN_UI-0.4+-000?logo=shadcn" alt="ShadCN UI"> | ^0.4.0 | [ui.shadcn.com](https://ui.shadcn.com/docs) |
 | <img src="https://img.shields.io/badge/Recharts-2+-64B5F6?logo=recharts" alt="Recharts"> | ^2.8.0 | [recharts.org](https://recharts.org/) |
+
+
+---
+## 🌍 Live Previews
+
+
+<table>
+  <tr>
+    <td width="50%">
+      <img width="1900" height="1683" alt="Weather-Dashboard" src="https://github.com/user-attachments/assets/7e01aa7c-bb0b-4667-8af5-32ab5c663436" />
+    </td>
+    <td width="50%">
+      <img width="1900" height="1893" alt="Cityp-Page" src="https://github.com/user-attachments/assets/25092906-e804-4a11-a732-7587166b8fe4" />
+    </td>
+  </tr>
+</table>
+
+
