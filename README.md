@@ -85,10 +85,8 @@ npm run dev
 
 <table>
   <tr>
-    <td width="50%">
+    <td>
       <img width="1900" height="1683" alt="Weather-Dashboard" src="https://github.com/user-attachments/assets/7e01aa7c-bb0b-4667-8af5-32ab5c663436" />
-    </td>
-    <td width="50%">
       <img width="1900" height="1893" alt="Cityp-Page" src="https://github.com/user-attachments/assets/25092906-e804-4a11-a732-7587166b8fe4" />
     </td>
   </tr>
